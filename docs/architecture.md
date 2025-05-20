@@ -326,10 +326,7 @@ CREATE TABLE webhook_receipts (
 
 ```typescript
 // Simplified example
-const createDelegationPrompt = async (
-  threadId: string,
-  overrideInstructions?: string
-) => {
+const createDelegationPrompt = async (threadId: string, overrideInstructions?: string) => {
   // 1. Get thread history
   const { messages } = await getThreadMessages(threadId);
 
